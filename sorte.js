@@ -14,11 +14,11 @@ document.getElementById("btnSortear").addEventListener("click", function () {
   let contador = 0;
   let intervalo = setInterval(() => {
     contador++;
-    resultadoEl.textContent = sortearNumero(1, 5); // números passando rápido
+    resultadoEl.textContent = sortearNumero(1, 10); // números passando rápido
     if (contador > 20) {
       // após 20 trocas, para
       clearInterval(intervalo);
-      resultadoEl.textContent = "🎯 Número sorteado: " + sortearNumero(1, 5);
+      resultadoEl.textContent = "🎯 Número sorteado: " + sortearNumero(1, 10);
     }
   }, 100); // troca a cada 100ms
 });
